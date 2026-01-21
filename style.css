@@ -1,4 +1,4 @@
-/* Reset global style*/
+/* RESET GLOBAL STYLES*/
 body{
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body{
     color: #333
 }
 
-/* Header and Navigation*/
+/* HEADER AND NAVIGATION*/
 header{
     background-color: darkblue;
     color: white;
@@ -15,22 +15,59 @@ header{
     text-align: center;
 }
 
+/* Remove bullet points from nav list*/
 nav ul{
     list-style-type: none;
     padding: 0;
 }
 
+/* Place nav items next to each other*/
 nav ul li{
     display: inline;
     margin: 0 15px;
 }
 
+/* Styling for nav items*/
 nav a{
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
+/* Styling for when hovering over nav item*/
 nav a:hover{
     color: orange
+}
+
+/* MAIN CONTENT*/
+main{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for profile picture*/
+img{
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+/* Styling for projects*/
+article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* Styling the Google Icons */
+.material-icons {
+    font-size: 36px;
+    color: #333;
+    vertical-align: middle;
 }
