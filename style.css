@@ -4,7 +4,7 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333
+    color: #333;
 }
 
 /* HEADER AND NAVIGATION*/
@@ -36,7 +36,7 @@ nav a{
 
 /* Styling for when hovering over nav item*/
 nav a:hover{
-    color: orange
+    color: orange;
 }
 
 /* MAIN CONTENT*/
@@ -65,9 +65,32 @@ article {
     background-color: #fafafa;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 /* Styling the Google Icons */
 .material-icons {
     font-size: 36px;
     color: #333;
     vertical-align: middle;
+}
+
+@media  screen and (max-width: 600px) {
+    
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+
+    main{
+        width: 90%;
+        margin: 20px auto;
+    }
 }
