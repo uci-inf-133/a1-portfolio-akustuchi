@@ -65,6 +65,7 @@ article {
     background-color: #fafafa;
 }
 
+/* Grid layout for Desktop*/
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,6 +79,7 @@ article {
     vertical-align: middle;
 }
 
+/* MOBILE RESPONSIVENESS*/
 @media  screen and (max-width: 600px) {
     
     .grid-container{
