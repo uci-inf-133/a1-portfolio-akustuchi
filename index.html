@@ -8,15 +8,17 @@ EMAIL: anokit@uci.edu
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <!-- you would also link to Bootstrap here! -->
-  <title>Anoki's Portfolio</title>
+  <!--Show at phone's actual width instead of zooming out-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anoki Tran">
+  <meta name="description" content="A portfolio for Anoki Tran, Informatics student at UCI">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>My Portfolio</title>
 </head>
 <body>
   <header>
+    <!--Navigation between different sections-->
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
@@ -27,11 +29,29 @@ EMAIL: anokit@uci.edu
   </header>
 
   <main>
-    <h1>This is Anoki's Portfolio</h1>
+    <section id = "about">
+        <h1>Hi! I'm Anoki Tran</h1>
+        <p>I'm an Informatics student at UCI</p>
+        <img src="pfp.jpg" alt="A photo of [Anoki Tran]" width="300">
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      
+      <article>
+        <h3>A1: Portfolio</h3>
+        <p>A responsive website built with HTML5 and CSS3</p>
+      </article>
+
+      <article>
+        <h3>A2: In Progress</h3>
+        <p>Future project for IN4MATX 133.</p>
+      </article>
+    </section>
   </main>
 
   <footer>
-    Made by Anoki
+    Made by Anoki Tran
   </footer>
 
   <p>
