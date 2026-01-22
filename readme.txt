@@ -38,11 +38,12 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
-    - There weren't any 
+    - There weren't any known errors, but I did get 46 potential problems. I think the majority were false positives regarding headings, image accessibility, and script safety. I went back and manually verified that all the images had appropriate alt text, headings follow the correct 
+    hierarchy, and form labels are associated with correct inputs.
 
 4. How long, in hours, did it take you to complete this assignment?
 
-    - 12 Hours
+    - 15 Hours
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
