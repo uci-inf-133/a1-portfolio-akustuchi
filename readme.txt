@@ -38,17 +38,27 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
-    - N/A
+    - There weren't any 
 
 4. How long, in hours, did it take you to complete this assignment?
 
-
+    - 12 Hours
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
     Generative AI (Gemini):
         - Query: "How can I blur a background image without blurring the text on top of it?"
         - Use: The AI explained that CSS filters applied to a parent container also blur the child text. It suggested using a CSS "pseudo-element" (::before) to create a separate background layer.
+
+        - Query: "How can I keep the navigation bar at the top of the screen even when I scroll down?"
+        - Use: The AI suggested using "position: sticky" combined with "top: 0" and a high "z-index" to make sure the navigation bar floats above the content.
+
+        - Query: "How do I make each section take up the full screen and center the content?"
+        - Use: The AI helped me implement "min-height: 80vh" to force card height and "display: flex" with "justify-content: center" to align the text.
+
+        - Query: "How can I separate my main content into distinct "cards" instead of one big container?"
+        - Use: The AI helped refactor the CSS, moving the shadow and padding styles from the main wrapper to individual <section> tags with a new ".card" class.
+        
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 

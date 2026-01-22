@@ -90,6 +90,7 @@ header {
     background-color: rgba(30, 30, 30, 0.85);
     backdrop-filter: blur(10px);
 
+    /* Keeps nav bar at top even when scrolled past */
     position: sticky;
     top: 0;
     z-index: 1000;
