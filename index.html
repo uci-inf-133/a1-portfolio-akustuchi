@@ -58,18 +58,31 @@ EMAIL: anokit@uci.edu
   <main>
     
     <!--About Me Section-->
-    <section id="about">
+    <section id="about" class="card">
         <h1>Hi! I'm Anoki Tran</h1>
-        <p>I'm an Informatics student at UCI</p>
+        <p class="subtitle">Informatics student at UCI</p>
         
         <figure class="photo-container">
             <img src="pfp.jpg" alt="Image of [Anoki Tran]" width="300">
         </figure>
+
+        <h3>Bio</h3>
+        <p>
+            I am a 3rd year undergraduate student at the University of California Irvine.
+            Currently, I am learning the fundamentals of Web Development and UI/UX design to build 
+            experiences that are accessible and enjoyable.
+        </p>
+        <p>
+            When I'm not designing, you can find me taking photos (like the one in the start screen!), 
+            playing video games, or swimming laps!
+        </p>
     </section>
 
     <!--Projects Section-->
-    <section id="projects">
+    <section id="projects" class="card">
       <h2>My Projects</h2>
+      <p style="margin-bottom: 20px;">Here are some of the things I've been working on recently.</p>
+
       <!--Applies grid for Desktop and Mobile responsiveness-->
       <div class="grid-container">
       
@@ -77,13 +90,18 @@ EMAIL: anokit@uci.edu
           <!--"code" will be swapped with Google Icon-->
           <span class="material-icons">code</span>
           <h3>A1: Portfolio</h3>
-          <p>A responsive website built with HTML5 and CSS3</p>
+          <p>
+             A fully responsive personal website built from scratch using HTML, CSS, and JavaScript.
+             Features include a blurred hero background, CSS Grid layout, and a contact form.
+          </p>
         </article>
     
         <article>
           <span class="material-icons">palette</span>
           <h3>A2: In Progress</h3>
-          <p>Future project for IN4MATX 133.</p>
+          <p>
+             Upcoming project for IN4MATX 133.
+          </p>
         </article>
       </div>
     </section>
@@ -91,10 +109,19 @@ EMAIL: anokit@uci.edu
     <!--Contact Section-->
     <section id="contact">
       <h2>Contact Me</h2>
+      <p>Have a question or want to work together? Send me a message!</p>
+
       <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+
         <label for="email">Email:</label>
         <!--Checks for @ symbol and prevents blank form submission-->
         <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea>
+        
         <!--Submit event for script-->
         <button type="submit">Send</button>
       </form>

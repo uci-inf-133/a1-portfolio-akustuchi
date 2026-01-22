@@ -1,4 +1,4 @@
-/* ADVANCED FEATURE: JS CONTACT FORM */
+// JS CONTACT FORM
 
 // Don't load the contact form until after the page is loaded
 document.addEventListener("DOMContentLoaded", function() {
@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Stops page from refreshing after submit
         event.preventDefault();
         
-        var userEmail = document.getElementById("email").value;
+        var userName = document.getElementById("name").value;
         
-        alert("Thanks! I'll contact " + userEmail + " soon.");
+        alert("Thanks " + userName + "! I'll read your message soon.");
         form.reset();
     });
 });

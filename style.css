@@ -1,4 +1,9 @@
 /* RESET STYLE */
+
+html{
+    scroll-behavior: smooth; /* Changes scrolling to glide instead of snapping*/
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -82,10 +87,15 @@ body {
 
 /* NAVIGATION BAR */
 header {
-    background-color: darkblue;
-    color: white;
+    background-color: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -110,12 +120,26 @@ nav a:hover {
 
 /* MAIN CONTENT */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto; /* Center the card */
     padding: 20px;
+}
+
+.card{
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; 
+
+    /* Adds a buffer so the top doesn't touch the browser edge when we jump */
+    scroll-margin-top: 50px;
 }
 
 /* Photo Styling (About Section) */
