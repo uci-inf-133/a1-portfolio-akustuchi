@@ -11,32 +11,34 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 0/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+    - Semantic HTML tags
+    - Images with alt text
+    - Custom icons from Google Material Icons 
 
 (b) CSS features
-
-
+    - Added custom font from Google fonts
+    - Custom color palette
+    - Modified padding and margins
 
 (c) Advanced features
-
-
-
+    - Navigation bar
+    - Hero page with a blurred personal photo
+    - JavaScript form handling
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
-
+    - N/A
 
 4. How long, in hours, did it take you to complete this assignment?
 
@@ -44,11 +46,14 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
-
+    Generative AI (Gemini):
+        - Query: "How can I blur a background image without blurring the text on top of it?"
+        - Use: The AI explained that CSS filters applied to a parent container also blur the child text. It suggested using a CSS "pseudo-element" (::before) to create a separate background layer.
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+    - N/A
 
 7. Is there anything special we need to know in order to run your code?
 
+    - N/A

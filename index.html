@@ -8,17 +8,43 @@ EMAIL: anokit@uci.edu
 
 <head>
   <meta charset="utf-8">
-  <!--Show at phone's actual width instead of zooming out-->
+  <!--Force width to match mobile screen instead of zooming out-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <meta name="author" content="Anoki Tran">
   <meta name="description" content="A portfolio for Anoki Tran, Informatics student at UCI">
+
+  <!--Add custom font from Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
+  <!--Download Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
   <title>My Portfolio</title>
 </head>
+
 <body>
+
+  <!--HERO SECTION-->
+  <section id="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Anoki Tran | Informatics @ UCI</p>
+        
+        <div class="hero-buttons">
+            <a href="#about" class="btn">About Me</a>
+            <a href="#projects" class="btn">See My Work</a>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div> 
+        
+        <p class="hero-credit">Background photo taken by me.</p>
+    </div>
+  </section>
+
+  <!--NAVIGATION BAR-->
   <header>
-    <!--Navigation between different sections-->
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
@@ -28,20 +54,27 @@ EMAIL: anokit@uci.edu
     </nav>
   </header>
 
-  <!--Main content-->
+  <!--MAIN CONTENT-->
   <main>
-    <section id = "about">
+    
+    <!--About Me Section-->
+    <section id="about">
         <h1>Hi! I'm Anoki Tran</h1>
         <p>I'm an Informatics student at UCI</p>
-        <img src="pfp.jpg" alt="A photo of [Anoki Tran]" width="300">
+        
+        <figure class="photo-container">
+            <img src="pfp.jpg" alt="Image of [Anoki Tran]" width="300">
+        </figure>
     </section>
 
+    <!--Projects Section-->
     <section id="projects">
       <h2>My Projects</h2>
-
-      <div class = "grid-container">
+      <!--Applies grid for Desktop and Mobile responsiveness-->
+      <div class="grid-container">
       
         <article>
+          <!--"code" will be swapped with Google Icon-->
           <span class="material-icons">code</span>
           <h3>A1: Portfolio</h3>
           <p>A responsive website built with HTML5 and CSS3</p>
@@ -52,26 +85,28 @@ EMAIL: anokit@uci.edu
           <h3>A2: In Progress</h3>
           <p>Future project for IN4MATX 133.</p>
         </article>
-      </div></section>
+      </div>
+    </section>
 
-    <section id = "contact">
+    <!--Contact Section-->
+    <section id="contact">
       <h2>Contact Me</h2>
-      <form id = "contactForm">
+      <form id="contactForm">
         <label for="email">Email:</label>
+        <!--Checks for @ symbol and prevents blank form submission-->
         <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        <!--Submit event for script-->
+        <button type="submit">Send</button>
       </form>
     </section>
+
   </main>
-  <!--Footer-->
+
   <footer>
-    Made by Anoki Tran
+    Made by Anoki Tran | anokit@uci.edu
   </footer>
 
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
   <script src="script.js"></script>
+
 </body>
 </html>

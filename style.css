@@ -1,97 +1,185 @@
-/* RESET GLOBAL STYLES*/
-body{
+/* RESET STYLE */
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif; /* Custom Google Font*/
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* HEADER AND NAVIGATION*/
-header{
+/* HERO SECTION */
+#hero {
+    height: 100vh; /* Forces section to be exactly 100% of the screen height */
+    display: flex;
+    justify-content: center; /* Center Horizontal */
+    align-items: center;     /* Center Vertical */
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+    
+    position: relative; /* Anchor for the background layer */
+    overflow: hidden;   /* Hide blurry edges */
+}
+
+/* Blurred Background Trick */
+/* "::before" creates a fake, invisible element*/
+#hero::before {
+    content: "";
+    position: absolute; /* Browser will ignore the normal layout rules and stretch this layer to fill the #hero box */
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    
+    background-image: url("hero_image.jpg"); 
+    background-size: cover;
+    background-position: center;
+    
+    /* Blur and Darken */
+    filter: brightness(0.4) blur(4px); 
+    
+    z-index: -1; /* Sends behind text */
+    transform: scale(1.1); /* Zooms in slightly to hide white borders */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+/* Hero Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #2c3e50;
+}
+
+.hero-credit {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+/* NAVIGATION BAR */
+header {
     background-color: darkblue;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Remove bullet points from nav list*/
-nav ul{
-    list-style-type: none;
+nav ul {
+    list-style-type: none; /* Remove bullets */
     padding: 0;
 }
 
-/* Place nav items next to each other*/
-nav ul li{
-    display: inline;
+nav ul li {
+    display: inline; /* Sit side-by-side */
     margin: 0 15px;
 }
 
-/* Styling for nav items*/
-nav a{
+nav a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-/* Styling for when hovering over nav item*/
-nav a:hover{
+nav a:hover {
     color: orange;
 }
 
-/* MAIN CONTENT*/
-main{
+/* MAIN CONTENT */
+main {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 40px auto; /* Center the card */
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for profile picture*/
-img{
-    border-radius: 50%;
-    border: 2px solid #333;
-    margin-top: 20px;
+/* Photo Styling (About Section) */
+.photo-container {
+    margin: 20px 0;
 }
 
-/* Styling for projects*/
+.photo-container img {
+    border: 3px solid #2c3e50;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Project Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits available splace into two equal columns */
+    gap: 20px;
+}
+
 article {
     border: 1px solid #ddd;
     padding: 15px;
-    margin-bottom: 20px;
     border-radius: 5px;
     background-color: #fafafa;
 }
 
-/* Grid layout for Desktop*/
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* Styling the Google Icons */
 .material-icons {
     font-size: 36px;
     color: #333;
     vertical-align: middle;
 }
 
-/* MOBILE RESPONSIVENESS*/
-@media  screen and (max-width: 600px) {
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 600px) {
     
-    .grid-container{
+    /* Stack Grid to 1 Column */
+    .grid-container {
         grid-template-columns: 1fr;
     }
 
-    nav ul li{
+    /* Stack Nav Links */
+    nav ul li {
         display: block;
         margin: 10px 0;
     }
 
-    main{
+    /* Use more screen width */
+    main {
         width: 90%;
         margin: 20px auto;
     }
